@@ -102,7 +102,7 @@
     - you can also check to see if nginx is running by visiting the ip address/domain in your browser.
 ## Add nginx block for your domain
 - create a directory for your deployment
-    - `sudo mkdir /var/www/beadsbybey.com/html`
+    - `sudo mkdir -p /var/www/beadsbybey.com/html`
 - fix permissions
     - `sudo chown -R $USER:users /var/www/beadsbybey.com/html`
     - create a deployment in Webstorm and upload it to the server
@@ -214,7 +214,7 @@ jobs:
       - name: Deploy to server
         run: |
          ssh-keyscan -H beadsbybey.com >> ~/.ssh/known_hosts 
-         scp -r ./dist/* gkephart@beadsbybey.com:/var/www/beadsbybey.com/html
+         scp -r ./dist/* aanwar@beadsbybey.com:/var/www/beadsbybey.com/html
 ```
 - Push your changes to github to trigger the action and test deploying your site
 
