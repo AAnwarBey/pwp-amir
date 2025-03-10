@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beads By Bey</title>
+    <link rel="stylesheet" href="src/index.css">
+</head>
+<body class="bg-white">
+
+<nav class="sticky top-0 z-50 w-full py-4 bg-white shadow-sm">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="flex gap-6 items-center">
+            <a href="#" class="text-charcoal hover:text-white hover:bg-sapphire px-3 py-2 rounded-md transition-colors hidden md:block">Home</a>
+            <a href="#" class="text-charcoal hover:text-white hover:bg-sapphire px-3 py-2 rounded-md transition-colors hidden md:block">Crystals</a>
+            <a href="#" class="text-charcoal hover:text-white hover:bg-sapphire px-3 py-2 rounded-md transition-colors hidden md:block">Jewelry</a>
+            <a href="#" class="text-charcoal hover:text-white hover:bg-sapphire px-3 py-2 rounded-md transition-colors hidden md:block">Contact</a>
+            <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-charcoal text-2xl">☰</button>
+        </div>
+        <div class="bg-sapphire text-white w-16 h-16 flex items-center justify-center text-sm absolute left-1/2 transform -translate-x-1/2">
+            Beads By Bey
+        </div>
+        <div class="flex gap-4">
+            <button class="text-charcoal hover:text-sapphire text-2xl" aria-label="Search">🔍</button>
+            <button class="text-charcoal hover:text-sapphire text-2xl" aria-label="Cart">🛒</button>
+        </div>
+    </div>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
+        <div class="container mx-auto px-4 py-3">
+            <a href="#" class="block py-2 text-charcoal hover:text-white hover:bg-sapphire px-3 rounded-md">Home</a>
+            <a href="#" class="block py-2 text-charcoal hover:text-white hover:bg-sapphire px-3 rounded-md">Crystals</a>
+            <a href="#" class="block py-2 text-charcoal hover:text-white hover:bg-sapphire px-3 rounded-md">Jewelry</a>
+            <a href="#" class="block py-2 text-charcoal hover:text-white hover:bg-sapphire px-3 rounded-md">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-20 bg-light-gray" aria-label="Hero Section">
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <h1 class="text-5xl md:text-6xl font-bold mb-4 text-charcoal">Built for style</h1>
+        <p class="text-xl mb-8 text-sapphire">Introducing our best crystal designs</p>
+        <a href="#new-releases" class="bg-sapphire text-white px-8 py-3 hover:bg-amethyst transition-colors inline-block rounded-md">
+            Shop
+        </a>
+    </div>
+</section>
+
+<!-- Crystal Cards -->
+<section id="crystals" class="bg-white py-16" aria-labelledby="crystal-section-title">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 id="crystal-section-title" class="text-2xl font-bold mb-8 text-center text-charcoal">Crystal Collection</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Crystal Card 1 -->
+            <div class="bg-amethyst text-white p-8 aspect-square flex flex-col group rounded-lg shadow-md">
+                <h3 class="text-2xl">Amethyst Crystal</h3>
+                <p class="mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Known for its calming energy and spiritual protection properties.</p>
+                <div class="mt-auto">
+                    <button class="text-white group flex items-center" aria-expanded="false" aria-controls="amethyst-details">
+                        Learn More
+                        <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Crystal Card 2 -->
+            <div class="bg-teal text-white p-8 aspect-square flex flex-col group rounded-lg shadow-md">
+                <h3 class="text-2xl">Clear Quartz</h3>
+                <p class="mt-2 opacity-0 group-hover:opacity-100 transition-opacity">Amplifies energy and thought, as well as the effect of other crystals.</p>
+                <div class="mt-auto">
+                    <button class="text-white group flex items-center" aria-expanded="false" aria-controls="quartz-details">
+                        Learn More
+                        <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-8 text-center text-charcoal/80 max-w-3xl mx-auto">
+            Amethyst chakra moonstone illuminate, celestine quartz sacred geometry harmonious. Alexandrite, gem of confidence citrine amplified.
+        </p>
+    </div>
+</section>
+
+<!-- New Releases -->
+<section id="new-releases" class="bg-light-gray py-16" aria-labelledby="new-releases-title">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 id="new-releases-title" class="text-2xl font-bold mb-8 text-charcoal">New Releases</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+            <!-- Product Card 1 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                <img src="/path/to/product1.webp" alt="Crystal Pendant Necklace"
+                     class="aspect-square w-full object-cover mb-3" loading="lazy">
+                <div class="p-4">
+                    <h3 class="font-medium text-charcoal">Crystal Pendant Necklace</h3>
+                    <p class="text-sapphire">$45 USD</p>
+                </div>
+                <div class="border-t border-light-gray mt-3"></div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                <img src="/path/to/product2.webp" alt="Amethyst Bracelet"
+                     class="aspect-square w-full object-cover mb-3" loading="lazy">
+                <div class="p-4">
+                    <h3 class="font-medium text-charcoal">Amethyst Bracelet</h3>
+                    <p class="text-sapphire">$35 USD</p>
+                </div>
+                <div class="border-t border-light-gray mt-3"></div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                <img src="/path/to/product3.webp" alt="Quartz Earrings"
+                     class="aspect-square w-full object-cover mb-3" loading="lazy">
+                <div class="p-4">
+                    <h3 class="font-medium text-charcoal">Quartz Earrings</h3>
+                    <p class="text-sapphire">$28 USD</p>
+                </div>
+                <div class="border-t border-light-gray mt-3"></div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                <img src="/path/to/product4.webp" alt="Jade Pendant"
+                     class="aspect-square w-full object-cover mb-3" loading="lazy">
+                <div class="p-4">
+                    <h3 class="font-medium text-charcoal">Jade Pendant</h3>
+                    <p class="text-sapphire">$40 USD</p>
+                </div>
+                <div class="border-t border-light-gray mt-3"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Top Collections -->
+<section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-8 text-charcoal">Top Collections</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+            <!-- Product Card Template (repeat 4x) -->
+            <div class="product-card bg-light-gray rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                <div class="bg-gray-200 aspect-square mb-3"></div>
+                <div class="p-4">
+                    <h3 class="font-medium text-charcoal">Product name</h3>
+                    <p class="text-sapphire">$50 USD</p>
+                </div>
+                <div class="border-t border-white/50 mt-3"></div>
+            </div>
+            <div class="product-card bg-light-gray rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                <div class="bg-gray-200 aspect-square mb-3"></div>
+                <div class="p-4">
+                    <h3 class="font-medium text-charcoal">Product name</h3>
+                    <p class="text-sapphire">$50 USD</p>
+                </div>
+                <div class="border-t border-white/50 mt-3"></div>
+            </div>
+            <div class="product-card bg-light-gray rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                <div class="bg-gray-200 aspect-square mb-3"></div>
+                <div class="p-4">
+                    <h3 class="font-medium text-charcoal">Product name</h3>
+                    <p class="text-sapphire">$50 USD</p>
+                </div>
+                <div class="border-t border-white/50 mt-3"></div>
+            </div>
+            <div class="product-card bg-light-gray rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                <div class="bg-gray-200 aspect-square mb-3"></div>
+                <div class="p-4">
+                    <h3 class="font-medium text-charcoal">Product name</h3>
+                    <p class="text-sapphire">$50 USD</p>
+                </div>
+                <div class="border-t border-white/50 mt-3"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="bg-sapphire text-white py-16" aria-labelledby="cta-title">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 id="cta-title" class="text-3xl font-bold mb-4">Bring your idea to life</h2>
+        <p class="mb-8 text-white/90">Custom designs and unique pieces created just for you</p>
+        <a href="#contact" class="bg-white text-sapphire px-8 py-3 hover:bg-amethyst hover:text-white transition-colors inline-block rounded-md">
+            Contact Us
+        </a>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section id="newsletter" class="bg-light-gray py-16" aria-labelledby="newsletter-title">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 id="newsletter-title" class="text-3xl font-bold mb-4 text-charcoal">Never miss a collection</h2>
+        <p class="mb-8 text-sapphire">Sign up for our newsletter to stay updated</p>
+
+        <form id="newsletter-form" class="max-w-md mx-auto flex flex-col gap-4">
+            <div>
+                <label for="email" class="sr-only">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"
+                       class="w-full border border-gray-200 px-4 py-2 rounded-md focus:border-sapphire focus:ring-1 focus:ring-sapphire"
+                       required aria-describedby="email-error">
+                <p id="email-error" class="text-red-500 text-left text-sm mt-1 hidden"></p>
+            </div>
+
+            <button type="submit" class="w-full bg-sapphire text-white px-6 py-2 hover:bg-amethyst transition-colors rounded-md">
+                Subscribe
+            </button>
+
+            <p id="form-success" class="text-teal hidden">Thanks for subscribing!</p>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-charcoal text-white py-16" aria-labelledby="footer-heading">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Shop Links -->
+            <div>
+                <h3 class="font-bold mb-4 text-white">Shop</h3>
+                <ul class="space-y-2">
+                    <li><a href="#crystals" class="text-gray-300 hover:text-teal">Crystals</a></li>
+                    <li><a href="#new-releases" class="text-gray-300 hover:text-teal">Jewelry</a></li>
+                    <li><a href="#new-releases" class="text-gray-300 hover:text-teal">New Releases</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-teal">Collections</a></li>
+                </ul>
+            </div>
+
+            <!-- About Links -->
+            <div>
+                <h3 class="font-bold mb-4 text-white">About</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-teal">Our Story</a></li>
+                    <li><a href="#contact" class="text-gray-300 hover:text-teal">Contact</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-teal">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Connect Links -->
+            <div>
+                <h3 class="font-bold mb-4 text-white">Connect</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-teal" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-teal" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-teal" aria-label="Twitter">Twitter</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter signup (second instance) -->
+            <div>
+                <h3 class="font-bold mb-4 text-white">Newsletter</h3>
+                <p class="mb-4 text-gray-300">Stay updated with our latest releases</p>
+                <form class="flex flex-col gap-2">
+                    <label for="footer-email" class="sr-only">Email</label>
+                    <input type="email" id="footer-email" placeholder="Email"
+                           class="w-full bg-white/10 px-3 py-2 rounded-md border-0 focus:ring-1 focus:ring-teal" required>
+                    <button type="submit" class="w-full bg-white text-charcoal px-4 py-2 rounded-md hover:bg-amethyst hover:text-white transition-colors">→</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="border-t border-white/10 mt-16 pt-8 text-center">
+            <p class="text-gray-300">© 2024 The Bead Guy. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

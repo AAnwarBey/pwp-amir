@@ -1,0 +1,229 @@
+@import "tailwindcss";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+:root {
+    --color-white: #FFFFFF;
+    --color-light-gray: #F5F5F5;
+    --color-sapphire: #14365D;
+    --color-amethyst: #B999BE;
+    --color-teal: #8ABDB6;
+    --color-charcoal: #2C2E39;
+}
+
+/* Base styles */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-charcoal);
+}
+
+/* Rest of the CSS remains the same */
+
+/* Modern gemstone colors */
+.bg-white {
+    background-color: var(--color-white);
+}
+
+.bg-light-gray {
+    background-color: var(--color-light-gray);
+}
+
+.bg-sapphire {
+    background-color: var(--color-sapphire);
+}
+
+.bg-amethyst {
+    background-color: var(--color-amethyst);
+}
+
+.bg-teal {
+    background-color: var(--color-teal);
+}
+
+.bg-charcoal {
+    background-color: var(--color-charcoal);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.text-sapphire {
+    color: var(--color-sapphire);
+}
+
+.text-amethyst {
+    color: var(--color-amethyst);
+}
+
+.text-teal {
+    color: var(--color-teal);
+}
+
+.text-charcoal {
+    color: var(--color-charcoal);
+}
+
+.border-light-gray {
+    border-color: var(--color-light-gray);
+}
+
+.border-sapphire {
+    border-color: var(--color-sapphire);
+}
+
+/* Hover states */
+.hover\:bg-sapphire:hover {
+    background-color: var(--color-sapphire);
+}
+
+.hover\:bg-amethyst:hover {
+    background-color: var(--color-amethyst);
+}
+
+.hover\:bg-teal:hover {
+    background-color: var(--color-teal);
+}
+
+.hover\:text-white:hover {
+    color: var(--color-white);
+}
+
+.hover\:text-sapphire:hover {
+    color: var(--color-sapphire);
+}
+
+.hover\:text-teal:hover {
+    color: var(--color-teal);
+}
+
+/* Navigation styles */
+.nav-logo {
+    background: var(--color-sapphire);
+    color: var(--color-white);
+    padding: 0.5rem 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+}
+
+/* Product Cards */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-card:hover,
+.hover-lift {
+    transform: translateY(-4px);
+}
+
+/* Crystal Cards */
+.crystal-card {
+    background: var(--color-sapphire);
+    color: var(--color-white);
+    aspect-ratio: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+button {
+    transition: all 0.3s ease;
+}
+
+.learn-more-btn span {
+    transition: transform 0.3s ease;
+}
+
+.learn-more-btn:hover span {
+    transform: translateX(8px);
+}
+
+/* Form Styles */
+input[type="email"] {
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+    border-color: var(--color-sapphire);
+    outline: none;
+}
+
+/* Newsletter Form */
+.newsletter-input {
+    border: 1px solid #e5e7eb;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.newsletter-btn {
+    background: var(--color-sapphire);
+    color: var(--color-white);
+    padding: 0.5rem 1.5rem;
+}
+
+/* Footer */
+.footer {
+    background: var(--color-charcoal);
+    color: var(--color-white);
+    padding: 4rem 1rem;
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+}
+
+/* Tablet Responsive */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .product-card,
+    .collection-card {
+        width: calc(50% - 1rem);
+    }
+}
