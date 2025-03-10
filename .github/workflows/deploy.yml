@@ -25,4 +25,4 @@ jobs:
       - name: Deploy to server
         run: |
          ssh-keyscan -H beadsbybey.com >> ~/.ssh/known_hosts 
-         scp -r ./dist/* gkephart@beadsbybey.com:/var/www/beadsbybey.com/html
+         scp -r ./dist/* aanwar@beadsbybey.com:/var/www/beadsbybey.com/html
