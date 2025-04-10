@@ -8,7 +8,7 @@ function HeroCarousel() {
 
 <Carousel slideInterval={5000} indicators={false}>
                   <div className="relative flex h-full items-center justify-start bg-cover bg-center p-8"
-                       style={{ backgroundImage: "url('Collections-Placeholder/black-collection.jpg')", backgroundSize: "35%", backgroundRepeat: "no-repeat" }}>
+                       style={{ backgroundImage: "url('Collections-Placeholder/black-collection.jpg')", backgroundSize: "30%", backgroundRepeat: "no-repeat" }}>
                     <div className="absolute inset-0 bg-black/30" />
                     <div className="z-10 max-w-xl text-left">
                       <h1 className="mb-4 text-4xl font-bold text-white md:text-6xl pl-8 md:pl-12">Built for style</h1>
@@ -21,7 +21,7 @@ function HeroCarousel() {
                   </div>
 
                   <div className="relative flex h-full items-center justify-start bg-cover bg-center p-8"
-                       style={{ backgroundImage: "url('Collections-Placeholder/clear-collection.jpg')", backgroundSize: "35%", backgroundRepeat: "no-repeat" }}>
+                       style={{ backgroundImage: "url('Collections-Placeholder/clear-collection.jpg')", backgroundSize: "30%", backgroundRepeat: "no-repeat" }}>
                     <div className="absolute inset-0 bg-black/30" />
                     <div className="z-10 max-w-xl text-left">
                       <h1 className="mb-4 text-4xl font-bold text-white md:text-6xl pl-8 md:pl-12">Elegance defined</h1>
@@ -34,7 +34,7 @@ function HeroCarousel() {
                   </div>
 
                   <div className="relative flex h-full items-center justify-start bg-cover bg-center p-8"
-                       style={{ backgroundImage: "url('Collections-Placeholder/green-collection.jpg')", backgroundSize: "35%", backgroundRepeat: "no-repeat" }}>
+                       style={{ backgroundImage: "url('Collections-Placeholder/green-collection.jpg')", backgroundSize: "30%", backgroundRepeat: "no-repeat" }}>
                     <div className="absolute inset-0 bg-black/30" />
                     <div className="z-10 max-w-xl text-left">
                       <h1 className="mb-4 text-4xl font-bold text-white md:text-6xl pl-8 md:pl-12">Ocean inspired</h1>
@@ -47,7 +47,7 @@ function HeroCarousel() {
                   </div>
 
                   <div className="relative flex h-full items-center justify-start bg-cover bg-center p-8"
-                       style={{ backgroundImage: "url('Collections-Placeholder/red-collection.jpg')", backgroundSize: "35%", backgroundRepeat: "no-repeat" }}>
+                       style={{ backgroundImage: "url('Collections-Placeholder/red-collection.jpg')", backgroundSize: "30%", backgroundRepeat: "no-repeat" }}>
                     <div className="absolute inset-0 bg-black/30" />
                     <div className="z-10 max-w-xl text-left">
                       <h1 className="mb-4 text-4xl font-bold text-white md:text-6xl pl-8 md:pl-12">Bold & vibrant</h1>
@@ -60,7 +60,7 @@ function HeroCarousel() {
                   </div>
 
                   <div className="relative flex h-full items-center justify-start bg-cover bg-center p-8"
-                       style={{ backgroundImage: "url('Collections-Placeholder/grey-collection.jpg')", backgroundSize: "35%", backgroundRepeat: "no-repeat" }}>
+                       style={{ backgroundImage: "url('Collections-Placeholder/grey-collection.jpg')", backgroundSize: "30%", backgroundRepeat: "no-repeat" }}>
                     <div className="absolute inset-0 bg-black/30" />
                     <div className="z-10 max-w-xl text-left">
                       <h1 className="mb-4 text-4xl font-bold text-white md:text-6xl pl-8 md:pl-12">Earth elements</h1>
