@@ -2,7 +2,9 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 
-:root {
+@import "tailwindcss";
+
+@theme {
     --color-white: #FFFFFF;
     --color-light-gray: #F5F5F5;
     --color-sapphire: #14365D;
@@ -10,6 +12,7 @@
     --color-teal: #8ABDB6;
     --color-charcoal: #2C2E39;
 }
+
 
 /* Base styles */
 body {

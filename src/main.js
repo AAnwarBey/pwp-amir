@@ -1,7 +1,26 @@
 import './index.css'
 import 'flowbite'
+import { BeadsNavbar } from './components/BeadsNavbar';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import HeroCarousel from './components/HeroCarousel';
+import ReactDOM from 'react-dom/client';
 
 document.addEventListener('DOMContentLoaded', () => {
+    // React component rendering for navbar
+    const navContainer = document.getElementById('nav-container');
+    if (navContainer) {
+        const root = createRoot(navContainer);
+        root.render(React.createElement(BeadsNavbar));
+    }
+
+    // React component rendering for hero carousel
+    const heroContainer = document.getElementById('hero-container');
+    if (heroContainer) {
+        const heroRoot = createRoot(heroContainer);
+        heroRoot.render(React.createElement(HeroCarousel));
+    }
+
     // Mobile menu toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
