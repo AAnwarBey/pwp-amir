@@ -22,7 +22,7 @@
 
             <div class="flex gap-6 items-center">
                <a href="#" class="text-charcoal hover:text-white hover:bg-sapphire px-3 py-2 rounded-md transition-colors hidden md:block">Jewelry</a>
-               <a href="#" class="text-charcoal hover:text-white hover:bg-sapphire px-3 py-2 rounded-md transition-colors hidden md:block">Contact</a>
+               <a href="#" class="text-charcoal hover:text-white hover:bg-sapphire px-3 py-2 rounded-md transition-colors hidden md:block">Connect</a>
                <button class="text-charcoal hover:text-sapphire" aria-label="Search">
                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -43,7 +43,7 @@
             <a href="#" class="block py-2 text-charcoal hover:text-white hover:bg-sapphire px-3 rounded-md">Home</a>
             <a href="#" class="block py-2 text-charcoal hover:text-white hover:bg-sapphire px-3 rounded-md">Crystals</a>
             <a href="#" class="block py-2 text-charcoal hover:text-white hover:bg-sapphire px-3 rounded-md">Jewelry</a>
-            <a href="#" class="block py-2 text-charcoal hover:text-white hover:bg-sapphire px-3 rounded-md">Contact</a>
+            <a href="#" class="block py-2 text-charcoal hover:text-white hover:bg-sapphire px-3 rounded-md">Connect</a>
         </div>
     </div>
 </nav>
@@ -204,7 +204,7 @@
        <img src="public/content/beads-by-bey-logo-2.png" height="1024" width="1024" class="mx-auto px-30 py-3" alt="Beads By Bey Logo"/>
                <div class="flex justify-center mt-4">
                    <a href="#" class="text-white hover:text-charcoal hover:bg-white px-3 py-2 rounded-md transition-colors md:block">Jewelry</a>
-                   <a href="#" class="text-white hover:text-charcoal hover:bg-white px-3 py-2 rounded-md transition-colors md:block ml-4">Contact</a>
+                   <a href="#" class="text-white hover:text-charcoal hover:bg-white px-3 py-2 rounded-md transition-colors md:block ml-4">Connect</a>
                </div>
         <button id="mobile-menu-button-2" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-charcoal text-2xl">☰</button>
     </div>
@@ -215,93 +215,245 @@
     <div class="max-w-7xl mx-auto px-4">
         <h2 id="new-releases-title" class="text-2xl font-bold mb-8 text-charcoal">New Releases</h2>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
             <!-- Product Card 1 -->
             <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
-                <img src="public/content/Firefly 20250410022157.png" alt="Lava Stone and Imperial Jasper Bracelet"
-                     class="aspect-square w-full object-cover mb-3" loading="lazy">
+                <div class="relative overflow-hidden group">
+                    <img src="public/content/Firefly 20250410022157.png" alt="Lava Stone and Imperial Jasper Bracelet"
+                         class="w-full object-cover aspect-square transition-transform duration-300 group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 bg-black/50 group-hover:opacity-100 transition-opacity cursor-pointer" onclick="document.getElementById('product1-modal').classList.replace('hidden', 'flex')">
+                        <span class="text-white font-medium">View full image</span>
+                    </div>
+                </div>
                 <div class="p-4">
                     <h3 class="font-medium text-charcoal">Lava Stone and Imperial Jasper Bracelet</h3>
-                    <p class="text-sapphire">$60 USD</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <p class="text-sapphire font-semibold">$60 USD</p>
+                        <button class="bg-sapphire hover:bg-amethyst text-white px-4 py-2 rounded transition-colors text-sm">Buy Now</button>
+                    </div>
                 </div>
-                <div class="border-t border-light-gray mt-3"></div>
             </div>
 
             <!-- Product Card 2 -->
             <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
-                <img src="public/content/amethyst bracelet.png" alt="Amethyst Bracelet"
-                     class="aspect-square w-full object-cover mb-3" loading="lazy">
+                <div class="relative overflow-hidden group">
+                    <img src="public/content/amethyst bracelet.png" alt="Amethyst Bracelet"
+                         class="w-full object-cover aspect-square transition-transform duration-300 group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 bg-black/50 group-hover:opacity-100 transition-opacity cursor-pointer" onclick="document.getElementById('product2-modal').classList.replace('hidden', 'flex')">
+                        <span class="text-white font-medium">View full image</span>
+                    </div>
+                </div>
                 <div class="p-4">
                     <h3 class="font-medium text-charcoal">Amethyst Bracelet</h3>
-                    <p class="text-sapphire">$60 USD</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <p class="text-sapphire font-semibold">$60 USD</p>
+                        <button class="bg-sapphire hover:bg-amethyst text-white px-4 py-2 rounded transition-colors text-sm">Buy Now</button>
+                    </div>
                 </div>
-                <div class="border-t border-light-gray mt-3"></div>
             </div>
 
             <!-- Product Card 3 -->
             <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
-                <div class="flex justify-center">
+                <div class="relative overflow-hidden group">
                     <img src="public/content/lavastone-tigers-eye.png" alt="Lava Stone & Tigers Eye Bracelet"
-                         class="aspect-square w-max object-cover mb-3" loading="lazy">
+                         class="w-full object-cover aspect-square transition-transform duration-300 group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 bg-black/50 group-hover:opacity-100 transition-opacity cursor-pointer" onclick="document.getElementById('product3-modal').classList.replace('hidden', 'flex')">
+                        <span class="text-white font-medium">View full image</span>
+                    </div>
                 </div>
                 <div class="p-4">
                     <h3 class="font-medium text-charcoal">Lava Stone & Tigers Eye Bracelet</h3>
-                    <p class="text-sapphire">$60 USD</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <p class="text-sapphire font-semibold">$60 USD</p>
+                        <button class="bg-sapphire hover:bg-amethyst text-white px-4 py-2 rounded transition-colors text-sm">Buy Now</button>
+                    </div>
                 </div>
-                <div class="border-t border-light-gray mt-3"></div>
             </div>
 
             <!-- Product Card 4 -->
             <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
-                <img src="public/content/Imperial Jasper-hematite-wood-metal-spacer.jpg" alt="Jade Pendant"
-                     class="aspect-square w-full object-cover mb-3" loading="lazy">
+                <div class="relative overflow-hidden group">
+                    <img src="public/content/Imperial Jasper-hematite-wood-metal-spacer.jpg" alt="Imperial Jasper hematite wood bracelet"
+                         class="w-full object-cover aspect-square transition-transform duration-300 group-hover:scale-110" loading="lazy">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 bg-black/50 group-hover:opacity-100 transition-opacity cursor-pointer" onclick="document.getElementById('product4-modal').classList.replace('hidden', 'flex')">
+                        <span class="text-white font-medium">View full image</span>
+                    </div>
+                </div>
                 <div class="p-4">
                     <h3 class="font-medium text-charcoal">Imperial Jasper hematite wood bracelet</h3>
-                    <p class="text-sapphire">$60 USD</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <p class="text-sapphire font-semibold">$60 USD</p>
+                        <button class="bg-sapphire hover:bg-amethyst text-white px-4 py-2 rounded transition-colors text-sm">Buy Now</button>
+                    </div>
                 </div>
-                <div class="border-t border-light-gray mt-3"></div>
             </div>
+        </div>
+    </div>
+
+    <!-- Product Modals (placed inside the section) -->
+    <!-- Product 1 Modal -->
+    <div id="product1-modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+        <div class="relative bg-white rounded-lg max-w-4xl max-h-full overflow-auto">
+            <img src="public/content/Firefly 20250410022157.png" alt="Lava Stone and Imperial Jasper Bracelet Full Size" class="max-h-[80vh] max-w-full">
+            <button type="button" class="absolute top-2 right-2 text-gray-400 bg-white/70 hover:bg-gray-200 rounded-full p-2" onclick="document.getElementById('product1-modal').classList.add('hidden')">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Product 2 Modal -->
+    <div id="product2-modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+        <div class="relative bg-white rounded-lg max-w-4xl max-h-full overflow-auto">
+            <img src="public/content/amethyst bracelet.png" alt="Amethyst Bracelet Full Size" class="max-h-[80vh] max-w-full">
+            <button type="button" class="absolute top-2 right-2 text-gray-400 bg-white/70 hover:bg-gray-200 rounded-full p-2" onclick="document.getElementById('product2-modal').classList.add('hidden')">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Product 3 Modal -->
+    <div id="product3-modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+        <div class="relative bg-white rounded-lg max-w-4xl max-h-full overflow-auto">
+            <img src="public/content/lavastone-tigers-eye.png" alt="Lava Stone & Tigers Eye Bracelet Full Size" class="max-h-[80vh] max-w-full">
+            <button type="button" class="absolute top-2 right-2 text-gray-400 bg-white/70 hover:bg-gray-200 rounded-full p-2" onclick="document.getElementById('product3-modal').classList.add('hidden')">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Product 4 Modal -->
+    <div id="product4-modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+        <div class="relative bg-white rounded-lg max-w-4xl max-h-full overflow-auto">
+            <img src="public/content/Imperial Jasper-hematite-wood-metal-spacer.jpg" alt="Imperial Jasper hematite wood bracelet Full Size" class="max-h-[80vh] max-w-full">
+            <button type="button" class="absolute top-2 right-2 text-gray-400 bg-white/70 hover:bg-gray-200 rounded-full p-2" onclick="document.getElementById('product4-modal').classList.add('hidden')">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
         </div>
     </div>
 </section>
 
 <!-- Top Collections -->
-<section class="bg-white py-16">
-    <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-2xl font-bold mb-8 text-charcoal">Top Collections</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-            <!-- Product Card Template (repeat 4x) -->
-            <div class="product-card bg-light-gray rounded-lg overflow-hidden shadow-sm hover:shadow-md">
-                <div class="bg-gray-200 aspect-square mb-3"></div>
-                <div class="p-4">
-                    <h3 class="font-medium text-charcoal">Product name</h3>
-                    <p class="text-sapphire">$50 USD</p>
+                    <section class="bg-white py-16" aria-labelledby="top-collections-title">
+                        <div class="max-w-7xl mx-auto px-4">
+                            <h2 id="top-collections-title" class="text-2xl font-bold mb-8 text-charcoal">Top Collections</h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+
+                                <!-- Collection Card 1 -->
+                                <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                                    <div class="relative overflow-hidden group">
+                                        <img src="public/Collections-Placeholder/black-collection.jpg" alt="Black Collection"
+                                             class="w-full object-cover aspect-square transition-transform duration-300 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 flex items-center justify-center opacity-0 bg-black/50 group-hover:opacity-100 transition-opacity cursor-pointer" onclick="document.getElementById('black-collection-modal').classList.replace('hidden', 'flex')">
+                                            <span class="text-white font-medium">View Collection</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3 class="font-medium text-charcoal">Black Collection</h3>
+                                        <div class="flex justify-between items-center mt-2">
+                                            <p class="text-sapphire font-semibold">starting at $15 USD</p>
+                                            <button class="bg-sapphire hover:bg-amethyst text-white px-4 py-2 rounded transition-colors text-sm">More Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Collection Card 2 -->
+                                <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                                    <div class="relative overflow-hidden group">
+                                        <img src="public/Collections-Placeholder/green-collection.jpg" alt="Green Collection"
+                                             class="w-full object-cover aspect-square transition-transform duration-300 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 flex items-center justify-center opacity-0 bg-black/50 group-hover:opacity-100 transition-opacity cursor-pointer" onclick="document.getElementById('green-collection-modal').classList.replace('hidden', 'flex')">
+                                            <span class="text-white font-medium">View Collection</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3 class="font-medium text-charcoal">Green Collection</h3>
+                                        <div class="flex justify-between items-center mt-2">
+                                            <p class="text-sapphire font-semibold">starting at $15 USD</p>
+                                            <button class="bg-sapphire hover:bg-amethyst text-white px-4 py-2 rounded transition-colors text-sm">More Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Collection Card 3 -->
+                                <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                                    <div class="relative overflow-hidden group">
+                                        <img src="public/Collections-Placeholder/grey-collection.jpg" alt="Grey Collection"
+                                             class="w-full object-cover aspect-square transition-transform duration-300 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 flex items-center justify-center opacity-0 bg-black/50 group-hover:opacity-100 transition-opacity cursor-pointer" onclick="document.getElementById('grey-collection-modal').classList.replace('hidden', 'flex')">
+                                            <span class="text-white font-medium">View Collection</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3 class="font-medium text-charcoal">Grey Collection</h3>
+                                        <div class="flex justify-between items-center mt-2">
+                                            <p class="text-sapphire font-semibold">starting at $15 USD</p>
+                                            <button class="bg-sapphire hover:bg-amethyst text-white px-4 py-2 rounded transition-colors text-sm">More Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Collection Card 4 -->
+                                <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md">
+                                    <div class="relative overflow-hidden group">
+                                        <img src="public/Collections-Placeholder/clear-collection.jpg" alt="Clear Collection"
+                                             class="w-full object-cover aspect-square transition-transform duration-300 group-hover:scale-110" loading="lazy">
+                                        <div class="absolute inset-0 flex items-center justify-center opacity-0 bg-black/50 group-hover:opacity-100 transition-opacity cursor-pointer" onclick="document.getElementById('clear-collection-modal').classList.replace('hidden', 'flex')">
+                                            <span class="text-white font-medium">View Collection</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3 class="font-medium text-charcoal">Clear Collection</h3>
+                                        <div class="flex justify-between items-center mt-2">
+                                            <p class="text-sapphire font-semibold">starting at $15 USD</p>
+                                            <button class="bg-sapphire hover:bg-amethyst text-white px-4 py-2 rounded transition-colors text-sm">More Info</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Collection Modals (placed outside the grid) -->
+                    <!-- Black Collection Modal -->
+                    <div id="black-collection-modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+                        <div class="relative bg-white rounded-lg max-w-4xl max-h-full overflow-auto">
+                            <img src="public/content/IMG_3778.jpg" alt="Black Collection Full Size" class="max-h-[80vh] max-w-full">
+                            <button type="button" class="absolute top-2 right-2 text-gray-400 bg-white/70 hover:bg-gray-200 rounded-full p-2" onclick="document.getElementById('black-collection-modal').classList.add('hidden')">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Green Collection Modal -->
+                    <div id="green-collection-modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+                        <div class="relative bg-white rounded-lg max-w-4xl max-h-full overflow-auto">
+                            <img src="public/content/IMG_3796.jpg" alt="Green Collection Full Size" class="max-h-[80vh] max-w-full">
+                            <button type="button" class="absolute top-2 right-2 text-gray-400 bg-white/70 hover:bg-gray-200 rounded-full p-2" onclick="document.getElementById('green-collection-modal').classList.add('hidden')">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Grey Collection Modal -->
+                    <div id="grey-collection-modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+                        <div class="relative bg-white rounded-lg max-w-4xl max-h-full overflow-auto">
+                            <img src="public/content/IMG_3828.jpg" alt="Grey Collection Full Size" class="max-h-[80vh] max-w-full">
+                            <button type="button" class="absolute top-2 right-2 text-gray-400 bg-white/70 hover:bg-gray-200 rounded-full p-2" onclick="document.getElementById('grey-collection-modal').classList.add('hidden')">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Clear Collection Modal -->
+                    <div id="clear-collection-modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+                        <div class="relative bg-white rounded-lg max-w-4xl max-h-full overflow-auto">
+                            <img src="public/content/IMG_3919.jpg" alt="Clear Collection Full Size" class="max-h-[80vh] max-w-full">
+                            <button type="button" class="absolute top-2 right-2 text-gray-400 bg-white/70 hover:bg-gray-200 rounded-full p-2" onclick="document.getElementById('clear-collection-modal').classList.add('hidden')">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="border-t border-white/50 mt-3"></div>
-            </div>
-            <div class="product-card bg-light-gray rounded-lg overflow-hidden shadow-sm hover:shadow-md">
-                <div class="bg-gray-200 aspect-square mb-3"></div>
-                <div class="p-4">
-                    <h3 class="font-medium text-charcoal">Product name</h3>
-                    <p class="text-sapphire">$50 USD</p>
-                </div>
-                <div class="border-t border-white/50 mt-3"></div>
-            </div>
-            <div class="product-card bg-light-gray rounded-lg overflow-hidden shadow-sm hover:shadow-md">
-                <div class="bg-gray-200 aspect-square mb-3"></div>
-                <div class="p-4">
-                    <h3 class="font-medium text-charcoal">Product name</h3>
-                    <p class="text-sapphire">$50 USD</p>
-                </div>
-                <div class="border-t border-white/50 mt-3"></div>
-            </div>
-            <div class="product-card bg-light-gray rounded-lg overflow-hidden shadow-sm hover:shadow-md">
-                <div class="bg-gray-200 aspect-square mb-3"></div>
-                <div class="p-4">
-                    <h3 class="font-medium text-charcoal">Product name</h3>
-                    <p class="text-sapphire">$50 USD</p>
-                </div>
-                <div class="border-t border-white/50 mt-3"></div>
             </div>
         </div>
     </div>
@@ -318,29 +470,29 @@
     </div>
 </section>
 
-<section class="bg-sapphire text-white py-16" aria-labelledby="cta-section-title">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 id="cta-section-title" class="text-3xl font-bold mb-4">Bring your idea to life</h2>
-        <h2 id="newsletter-title" class="text-3xl font-bold mb-4 text-charcoal">Never miss a collection</h2>
-        <p class="mb-8 text-sapphire">Sign up for our newsletter to stay updated</p>
+<!--<section class="bg-sapphire text-white py-16" aria-labelledby="cta-section-title">-->
+<!--        <div class="max-w-7xl mx-auto px-4 text-center">-->
+<!--            <h2 id="cta-section-title" class="text-3xl font-bold mb-4">Bring your idea to life</h2>-->
+<!--        <h2 id="newsletter-title" class="text-3xl font-bold mb-4 text-charcoal">Never miss a collection</h2>-->
+<!--        <p class="mb-8 text-sapphire">Sign up for our newsletter to stay updated</p>-->
 
-        <form id="newsletter-form" class="max-w-md mx-auto flex flex-col gap-4">
-            <div>
-                <label for="email" class="sr-only">Email address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email"
-                       class="w-full border border-gray-200 px-4 py-2 rounded-md focus:border-sapphire focus:ring-1 focus:ring-sapphire"
-                       required aria-describedby="email-error">
-                <p id="email-error" class="text-red-500 text-left text-sm mt-1 hidden"></p>
-            </div>
+<!--        <form id="newsletter-form" class="max-w-md mx-auto flex flex-col gap-4">-->
+<!--            <div>-->
+<!--                <label for="email" class="sr-only">Email address</label>-->
+<!--                <input type="email" id="email" name="email" placeholder="Enter your email"-->
+<!--                       class="w-full border border-gray-200 px-4 py-2 rounded-md focus:border-sapphire focus:ring-1 focus:ring-sapphire"-->
+<!--                       required aria-describedby="email-error">-->
+<!--                <p id="email-error" class="text-red-500 text-left text-sm mt-1 hidden"></p>-->
+<!--            </div>-->
 
-            <button type="submit" class="w-full bg-sapphire text-white px-6 py-2 hover:bg-amethyst transition-colors rounded-md">
-                Subscribe
-            </button>
+<!--            <button type="submit" class="w-full bg-sapphire text-white px-6 py-2 hover:bg-amethyst transition-colors rounded-md">-->
+<!--                Subscribe-->
+<!--            </button>-->
 
-            <p id="form-success" class="text-teal hidden">Thanks for subscribing!</p>
-        </form>
-    </div>
-</section>
+<!--            <p id="form-success" class="text-teal hidden">Thanks for subscribing!</p>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</section>-->
 
 <!-- Footer -->
 <footer class="bg-charcoal text-white py-16" aria-labelledby="footer-heading">
@@ -364,7 +516,7 @@
                 <h3 class="font-bold mb-4 text-white">About</h3>
                 <ul class="space-y-2">
                     <li><a href="#" class="text-gray-300 hover:text-teal">Our Story</a></li>
-                    <li><a href="#contact" class="text-gray-300 hover:text-teal">Contact</a></li>
+                    <li><a href="#contact" class="text-gray-300 hover:text-teal">Connect</a></li>
                     <li><a href="#" class="text-gray-300 hover:text-teal">FAQ</a></li>
                 </ul>
             </div>
@@ -375,7 +527,7 @@
                 <ul class="space-y-2">
                     <li><a href="#" class="text-gray-300 hover:text-teal" aria-label="Instagram">Instagram</a></li>
                     <li><a href="#" class="text-gray-300 hover:text-teal" aria-label="Facebook">Facebook</a></li>
-                    <li><a href="#" class="text-gray-300 hover:text-teal" aria-label="Twitter">Twitter</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-teal" aria-label="Twitter">YouTube</a></li>
                 </ul>
             </div>
 
